@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="button" onclick="start();"></div>
+<div class="popup" id="loading">
+    <h2>Es wird alles gut gemacht<br />Bitte warten!</h2>
+    <div id="loadingbar-empty">
+        <div id="loadingbar-full"></div>
+    </div>
+</div>
+<div class="popup" id="done">
+    <h2>Jetzt ist alles gut!*</h2>
+    *Sollte noch nicht alles gut sein, überprüfen Sie bitte die Einstellung Ihrer objektiven Wahrnehmung und starten sie notfalls den Prozess neu...<br />
+    <br />
+    Have a nice day :)
+    <img src="~/Content/pics/clear.png" alt="" class="close" onclick="popupClose();" />
+</div>
+<div class="popup" id="impressum">
+<img src="~/Content/pics/popup-bottom.png" alt="" class="popup-footer"/>
+    </div>
+
+
+@section Scripts{
+    <script src="~/Scripts/alleswirdgut.js"></script>
+}
